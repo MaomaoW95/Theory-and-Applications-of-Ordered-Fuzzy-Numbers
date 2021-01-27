@@ -1,0 +1,38 @@
+\documentclass{ctexbook}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathabx}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\ctexset{
+%chapter/format = \sffamily\raggedright,
+section/format += \sffamily\raggedright,
+subsection/format += \fbox,
+}
+
+% 中文定理环境
+% \indent 为了段前空两格
+\newtheorem{theorem}{\indent 定理}[section]
+\newtheorem{lemma}[theorem]{\indent 引理}
+\newtheorem{proposition}[theorem]{\indent 命题}
+\newtheorem{corollary}[theorem]{\indent 推论}
+\newtheorem{definition}{\indent 定义}[section]
+\newtheorem{example}{\indent 例}[chapter]
+\newtheorem{remark}{\indent 注}[section]
+\newenvironment{solution}{\begin{proof}[\indent\bf 解]}{\end{proof}}
+\renewcommand{\proofname}{\indent\bf 证明}
+
+
+
+
+
+\begin{document}
+\title{模糊集的概念与应用}
+\author{Michal Jezewski }
+\maketitle
+
+\tableofcontents
+
+\input{ch01/ch01.tex}
+
+\end{document}
